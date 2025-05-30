@@ -6,7 +6,7 @@ function StepFive() {
   return (
     <>
      {/* @ts-ignore */}
-      <div className="w-full h-full  items-center " >
+      <div className="w-full h-full  flex justify-center items-center " >
         <div className=" max-sm:w-5/6 px-8 py-20 rounded-lg  grid place-items-center gap-4 ">
           <img className="size-15 lg:size-20 lg:m-2" src={Tick} alt="ThankYou" />
           <h2 className="font-UbuntoBold text-2xl text-Marine-blue">

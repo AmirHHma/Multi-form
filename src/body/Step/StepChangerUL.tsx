@@ -1,17 +1,17 @@
-import { useDispatch } from "react-redux";
 import { Link, useLocation } from "react-router";
 import React from 'react';
 
 
 function StepChangerUL() {
-    const dispatch=useDispatch()
     let listChildren=[
-        {id:1,desc:'YOUR INFO',url:'/'},
-        {id:2,desc:'SELECT PLAN',url:'/plan'},
-        {id:3,desc:'ADD-ONS',url:'/service'},
-        {id:4,desc:'SUMMARY',url:'/review'},
+        {id:1,desc:'YOUR INFO',url:'/Multi-form'},
+        {id:2,desc:'SELECT PLAN',url:'/Multi-form/plan'},
+        {id:3,desc:'ADD-ONS',url:'/Multi-form/service'},
+        {id:4,desc:'SUMMARY',url:'/Multi-form/review'},
     ]
     let loc:string=useLocation().pathname
+    console.log(loc)
+    console.log()
 
 
     return ( <>
