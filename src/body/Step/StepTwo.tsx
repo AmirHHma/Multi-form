@@ -31,7 +31,7 @@ function StepTwo() {
         {id:2,icon:FaGamepad(null),title:'Advanced',monthly:12,yearly:120,iconColor:'bg-pink-400'},
         {id:3,icon:IoGameController(null),title:'Pro',monthly:15,yearly:150,iconColor:'bg-Purplish-blue'},
     ]
-    let goNext=()=>Object.keys(paymentState).length!==0 ? navigate('/service') : alert('select a plan first')
+    let goNext=()=>Object.keys(paymentState).length!==0 ? navigate('/Multi-form/service') : alert('select a plan first')
     
 
 
@@ -47,7 +47,7 @@ function StepTwo() {
                     <div className="flex justify-center mt-5 gap-10 ">
                         <ToggleButton/>
                     </div>
-                    <Button valid={goNext} prev={'/'}/>
+                    <Button valid={goNext} prev={'/Multi-form/'}/>
                 </Template>
 
     </> );

@@ -29,10 +29,10 @@ function Step() {
             <div className="lg:h-full lg:w-xl">
               <Routes>
                 <Route path="/" element={<StepOne />}></Route>
-                <Route path="/plan" element={<StepTwo />}></Route>
-                <Route path="/service" element={<StepThree />}></Route>
-                <Route path="/review" element={<StepFour />}></Route>
-                <Route path="/done" element={<StepFive />}></Route>
+                <Route path="plan" element={<StepTwo />}></Route>
+                <Route path="service" element={<StepThree />}></Route>
+                <Route path="review" element={<StepFour />}></Route>
+                <Route path="done" element={<StepFive />}></Route>
               </Routes>
             </div>
           </div>

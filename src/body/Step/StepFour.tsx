@@ -5,7 +5,6 @@ import {  useEffect } from "react";
 import { sumAll } from "../../redux/slices/overallSummer";
 import Button from "./StepButtons";
 import { useNavigate,Link } from "react-router";
-import StepTwo from "./StepTwo";
 import React from 'react';
 
 
@@ -42,7 +41,7 @@ function StepFour() {
                                         <h5 className="font-UbuntoBold text-Marine-blue ">{payingMethod ? `$${overAllPlan.yearly}/yr` : `$${overAllPlan.monthly}/mo`}</h5>
                                     </div>
                                     <div className="pb-2">
-                                       <Link  to={'/plan'}>  <span className="underline text-Cool-gray " >change</span></Link>
+                                       <Link  to={'/Multi-form/plan'}>  <span className="underline text-Cool-gray " >change</span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +59,7 @@ function StepFour() {
                                 <h4 className="font-UbuntoBold text-Purplish-blue lg:text-xl ">{`+$${overAllPrice}/${payingMethod ? 'yr' : 'mo'}`}</h4>
                         </div> 
                     </div>
-                    <Button prev={'/service'}  valid={()=>navigate('/done')}/>
+                    <Button prev={'/Multi-form/service'}  valid={()=>navigate('/Multi-form/done')}/>
 
                 </Template>
     </> );

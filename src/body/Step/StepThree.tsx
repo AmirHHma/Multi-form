@@ -17,12 +17,12 @@ function StepThree() {
     let serviceArr=useSelector((State:RootState)=>State.overallSummer.allServices)
     let selectedServices=useSelector((state:RootState)=>state.overallSummer.SelectedServices)
     const navigate=useNavigate()
-    const goNext=()=>selectedServices.length!==0 ? navigate('/review') : alert('choose a service')
+    const goNext=()=>selectedServices.length!==0 ? navigate('/Multi-form/review') : alert('choose a service')
 
     return (<>
                 <Template title={'Pick add-ons'} desc={'Add-ons help enhance your gaming experience.'}>
                         {serviceArr.map(box=><ServiceBox key={crypto.randomUUID()} {...box}/>)}
-                        <Button  prev={'/plan'} valid={goNext}/>
+                        <Button  prev={'/Multi-form/plan'} valid={goNext}/>
                 </Template>
     </> );
 }

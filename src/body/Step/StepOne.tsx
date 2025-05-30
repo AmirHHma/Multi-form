@@ -28,7 +28,7 @@ function StepOne() {
     })
 
         //@ts-ignore
-    inputs.every(item=>item.lastChild.value) && navigate('/plan')
+    inputs.every(item=>item.lastChild.value) && navigate('plan')
 }
 const handleInput=e=>{
         e.target.parentElement.classList.remove('invalidInput')
@@ -41,13 +41,13 @@ function Inputs({type,PH,name,regex=null}){
     return(<>
     <div className="relative">
             <label htmlFor="phone" >{name}</label>
-            <input onInput={handleInput}   pattern={regex} placeholder={PH} id="phone"
+            <input onInput={handleInput}  pattern={regex} placeholder={PH} id="phone"
             type={type} className={`outline rounded-md w-full px-2 font-UbuntoBold text-sm  focus:outline-Marine-blue py-2.5 outline-Cool-gray  placeholder:text-Cool-gray peer mt-2 ${type=='number' && 'inputNumberRemove'}`} />
         </div>
 
     </>)
 }
-const goNext=()=>valid && navigate('/plan')
+const goNext=()=>valid && navigate('plan')
 
 
     let inputArr=[
@@ -65,7 +65,7 @@ const goNext=()=>valid && navigate('/plan')
                 <div ref={inputContainer} className="grid gap-5">
                         {inputArr.map(item=><Inputs key={item.id} {...item}/>)}
                 </div>
-                <Button valid={goNext}  prev={'/'} />
+                <Button valid={goNext}  prev={'Multi-form/'} />
             </form>
     </Template>
     </> );

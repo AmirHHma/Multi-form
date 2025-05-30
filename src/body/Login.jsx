@@ -7,7 +7,7 @@ function Login () {
     <section className="bg-Light-gray  w-screen h-screen flex justify-center relative items-center">
         <BrowserRouter>
             <Routes>
-                <Route path='/*' element={<Step/>}/>
+                <Route path='Multi-form/*' element={<Step/>}/>
             </Routes> 
         </BrowserRouter>
     </section>
